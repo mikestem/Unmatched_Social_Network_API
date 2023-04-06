@@ -8,9 +8,9 @@ app.use(express.json());
 app.use(require("./routes"));
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/social-network",
+    process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/social-network",
     {
-      useFindAndModify: false,
+      // useFindAndModify: false,
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }
